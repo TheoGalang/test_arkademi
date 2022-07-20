@@ -52,7 +52,7 @@ class HomePageController extends GetxController {
       const Loading(),
       barrierDismissible: false,
     );
-    CourseResponse _courseresp = await _resp.getActivity();
+    CourseResponse _courseresp = await _resp.getCourse();
     Get.back();
 
     if (_courseresp != null) {

@@ -7,7 +7,7 @@ import 'package:test_arkademi/models/course_response.dart';
 
 class HomePageService {
 
-  Future<CourseResponse> getActivity() async {
+  Future<CourseResponse> getCourse() async {
     String url = "https://engineer-test-eight.vercel.app/course-status.json";
     final response = await http.get(
       Uri.parse(url),
